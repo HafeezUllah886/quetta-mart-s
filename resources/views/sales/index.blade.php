@@ -38,7 +38,7 @@
                                     <td>{{ $sale->customer->title }}</td>
                                     <td>{{ date('d M Y', strtotime($sale->date)) }}</td>
                                     <td>{{ number_format($amount) }}</td>
-                                   
+
                                     <td>
                                         <div class="dropdown">
                                             <button class="btn btn-soft-secondary btn-sm dropdown" type="button"
@@ -51,6 +51,13 @@
                                                         onclick=""><i
                                                             class="ri-eye-fill align-bottom me-2 text-muted"></i>
                                                         View
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="dropdown-item" onclick="newWindow('{{route('pos.print', $sale->id)}}')"
+                                                        onclick=""><i
+                                                            class="ri-eye-fill align-bottom me-2 text-muted"></i>
+                                                        Print
                                                     </button>
                                                 </li>
                                                 <li>

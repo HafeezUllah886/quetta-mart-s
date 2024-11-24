@@ -107,7 +107,7 @@
                 $("#catBox").hide();
             }
 
-            if(type === "Customer")
+            if(type != "Business" )
             {
                 $(".customer").show();
             }

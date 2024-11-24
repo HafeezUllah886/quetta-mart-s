@@ -26,9 +26,7 @@
                                 <select name="product" class="selectize" id="product">
                                     <option value="0"></option>
                                     @foreach ($products as $product)
-
-                                            <option value="{{ $product->id }}">{{ $product->name }}</option>
-
+                                        <option value="{{ $product->id }}">{{ $product->name }}</option>
                                     @endforeach
                                 </select>
                             </div>
