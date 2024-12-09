@@ -99,7 +99,7 @@
                     <select name="product" class="selectize" placeholder="Search Product (F8)">
                         @foreach ($products as $product)
                             <option value=""></option>
-                            <option value="{{ $product->id }}">{{ $product->name }} | {{$product->price}} </option>
+                            <option value="{{ $product->id }}">{{ $product->name }} | {{$product->price}} | {{$product->stock}} </option>
                         @endforeach
                     </select>
                 </div>

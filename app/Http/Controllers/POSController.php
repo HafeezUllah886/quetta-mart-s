@@ -20,6 +20,10 @@ class POSController extends Controller
         $accounts = accounts::Business()->get();
         $customers = accounts::Customer()->get();
         $products = products::all();
+        foreach($products as $product)
+        {
+            $product->stock = getStock($product->id);
+        }
         $categories = categories::all();
         return view('pos.index', compact('accounts', 'customers', 'products', 'categories'));
     }
@@ -101,7 +105,7 @@ class POSController extends Controller
             );
 
             $ids = $request->id;
-            dashboard();
+
             $total = 0;
             foreach($ids as $key => $id)
             {

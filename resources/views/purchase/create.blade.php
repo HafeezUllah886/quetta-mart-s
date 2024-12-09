@@ -35,7 +35,7 @@
                             <div class="form-group">
                                 <form method="get" id="code_form">
                                     <label for="code">Code</label>
-                                    <input type="number" class="form-control" id="code">
+                                    <input type="text" class="form-control" id="code">
                                 </form>
                             </div>
                         </div>
