@@ -222,6 +222,10 @@
                                     data-key="t-basic-elements">Daily Cash Book</a>
                             </li>
                             <li class="nav-item">
+                                <a href="{{ route('dailySalesReport') }}" class="nav-link"
+                                    data-key="t-basic-elements">Daily Product Wise Sale</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="{{ route('reportLedger') }}" class="nav-link"
                                     data-key="t-basic-elements">Ledger Report</a>
                             </li>

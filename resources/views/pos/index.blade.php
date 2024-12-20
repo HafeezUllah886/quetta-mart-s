@@ -507,10 +507,15 @@
             $("#received").val(newAmount);
             changeReceived();
         }
-
+        var isSubmitting = false;
         ////////////////// Save ////////////////////////
         $("#detailsForm").submit(function(e) {
             e.preventDefault();
+            if (isSubmitting) {
+                console.log("Waiting for response");
+                return;
+            }
+            isSubmitting = true;
             var data1 = $("#productsForm").serialize();
             var data2 = $("#detailsForm").serialize();
             var combinedData = data1 + '&' + data2;
@@ -520,7 +525,7 @@
                 data: combinedData,
                 success: function(response) {
                     console.log(response);
-                   window.open("{{ url('/pos/print/') }}/"+response, "_self")
+                   window.open("{{ url('/pos/print/') }}/"+response, "_self") 
                 }
             });
         });
