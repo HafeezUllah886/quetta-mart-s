@@ -54,13 +54,15 @@
                                         @php
                                             $total += $p->total;
                                         @endphp
-                                            <tr>
-                                                <td>{{ $key+1 }}</td>
-                                                <td class="text-start">{{ $p->name }}</td>
-                                                <td class="text-end">{{ $p->qty }}</td>
-                                                <td class="text-end">{{ number_format($p->total) }}</td>
-                                                <td class="text-end">{{ getStock($p->id) }}</td>
-                                            </tr>
+                                             @if($p->qty > 0)
+                                             <tr>
+                                                 <td>{{ $key+1 }}</td>
+                                                 <td class="text-start">{{ $p->name }}</td>
+                                                 <td class="text-end">{{ $p->qty }}</td>
+                                                 <td class="text-end">{{ number_format($p->total) }}</td>
+                                                 <td class="text-end">{{ getStock($p->id) }}</td>
+                                             </tr>
+                                             @endif
                                         @endforeach
                                         </tbody>
                                         <tfoot>
