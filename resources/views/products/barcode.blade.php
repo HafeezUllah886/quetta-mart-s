@@ -124,7 +124,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center">
-                                {!! DNS1D::getBarcodeSVG($product->code, 'C128', 1.2, 50) !!}
+                                {!! DNS1D::getBarcodeSVG($product->code, 'C128', 1, 50) !!}
                         </td>
                     </tr>
                 </table>
@@ -155,7 +155,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: center">
-                                {!! DNS1D::getBarcodeSVG($product->code, 'C128', 1.2, 50) !!}
+                                {!! DNS1D::getBarcodeSVG($product->code, 'C128', 1, 50) !!}
                         </td>
                     </tr>
                 </table>
