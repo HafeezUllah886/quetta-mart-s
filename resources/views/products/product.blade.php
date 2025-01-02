@@ -120,6 +120,9 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="card-footer">
+                    {{$items->links()}}
+                </div>
             </div>
         </div>
     </div>
