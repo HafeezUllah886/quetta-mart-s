@@ -11,14 +11,14 @@
            /*  background: rgb(199, 199, 199); */
             font-size: 15px;
             font-family: "Helvetica";
-            width: 100mm;
-            height: 27mm;
+            width: 80mm;
+            height: 28mm;
             margin: 0;
             padding: 0;
         }
         .main{
-            width: 100mm;
-            height: 27mm;
+            width: 80mm;
+            height: 28mm;
             background: #fff;
             overflow: hidden;
             margin: 0px auto;
@@ -71,7 +71,7 @@
             text-transform: uppercase;
         }
         .truncate {
-            width: 47mm;
+            width: 38mm;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -98,10 +98,10 @@
     </style>
 </head>
 <body>
-    <div class="row main m-0 p-0 mt-1 "  id="main">
-        <div style="width:47mm;margin-right:3mm;margin-left:2mm;">
+    <div class="row main m-0 p-0 mt-1"  id="main">
+        <div style="width:38mm;margin-right:4mm;margin-left:0mm;">
             <div>
-                <table width="100%" >
+                <table width="100%">
                     <tr>
                         <td colspan="2" class="">
                             <h5 class="text-center truncate" style="margin:0;">
@@ -130,7 +130,7 @@
                 </table>
             </div>
         </div>
-        <div style="width:47mm;">
+        <div style="width:38mm;">
             <div >
                 <table width="100%">
                     <tr>
@@ -166,9 +166,9 @@
 </html>
 <script src="{{ asset('src/plugins/src/jquery-ui/jquery-ui.min.js') }}"></script>
 <script src="{{ asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script>
+ <script>
     window.print();
         setTimeout(function() {
         window.location.href = "{{ url('/product')}}";
     }, 5000);
-</script>
+</script> 
