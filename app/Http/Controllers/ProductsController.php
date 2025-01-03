@@ -14,7 +14,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $items = products::with('category', 'unit')->paginate(100);
+        $items = products::with('category', 'unit')->paginate(1000);
         $cats = categories::orderBy('name', 'asc')->get();
         return view('products.product', compact('items', 'cats'));
     }
